@@ -1,0 +1,8 @@
+
+// Customize Bootstrap variables that get imported before the original Bootstrap variables.
+// Thus original Bootstrap variables can depend on values from here.
+// Check node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+
+//@import url(https://fonts.googleapis.com/css?family=Lato);
+$font-family-sans-serif: 'Lato';
+$font-family-sans-serif: 'linotteregular';
