@@ -8,11 +8,17 @@ A quick starter using:
 * [Redux](http://redux.js.org)
 * [React Bootstrap](https://react-bootstrap.github.io/)
 
-Start using it by:
+To start using it:
 * clone it
 * run `npm install`
 * run `npm start`
 * access it using [http://localhost:8080](http://localhost:8080)
+
+To build a release:
+* run `npm run build`
+* run `ws -p 8080`
+* access it using [http://localhost:8080](http://localhost:8080)
+
 
 `ws` is a small and useful Web Server. Install it using `npm install -g local-web-server`.
 

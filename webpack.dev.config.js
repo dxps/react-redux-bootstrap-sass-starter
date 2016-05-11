@@ -39,7 +39,7 @@ module.exports = {
             }, {
                 test: /(\.scss|\.css)$/,
                 // ExtractTextPlugin does not work with HMR, but it will be included in webpack prod config
-                // loader: ExtractTextPlugin.extract('style', 'css?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!sass?sourceMap!toolbox')
+                // loader: ExtractTextPlugin.extract('style', 'css?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!sass?sourceMap')
                 loader: 'style!css?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!sass?sourceMap'
             }, {
                 test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/,
@@ -61,7 +61,7 @@ module.exports = {
 
     plugins: [
         new webpack.DefinePlugin({'process.env.NODE_ENV': JSON.stringify('development')}),
-        new ExtractTextPlugin('react-toolbox.css', {allChunks: true}),
+        new ExtractTextPlugin('app.css', {allChunks: true}),
         new webpack.NoErrorsPlugin()
     ]
 
